@@ -23,9 +23,9 @@ CREATE TABLE bronze.crm_cust_info (
 );
 
 -- 2. Product Information from CRM
-DROP TABLE IF EXISTS bronze.crm_prd_info;
+DROP TABLE IF EXISTS bronze.crm_prod_info;
 
-CREATE TABLE bronze.crm_prd_info (
+CREATE TABLE bronze.crm_prod_info (
     prd_id           INT,           -- Unique numerical identifier for the product
     prd_key          VARCHAR(50),   -- Product's alphanumeric key (unique identifier)
     prd_nm           VARCHAR(50),   -- Product name
@@ -79,3 +79,4 @@ CREATE TABLE bronze.erp_px_cat_g1v2 (
     subcat         VARCHAR(50), -- Subcategory
     maintenance    VARCHAR(50)  -- Maintenance status or flag
 );
+
